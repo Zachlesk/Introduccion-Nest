@@ -10,8 +10,8 @@ export class AstronautasService {
         @InjectModel(Astronauta.name) private astronautaModel:Model<Astronauta>
     ){}
 
-        async create(astronauta:any){
-            const createdAstronauta = new this.astronautaModel(astronauta);
+        async create(Astronauta:any){
+            const createdAstronauta = new this.astronautaModel(Astronauta);
             return createdAstronauta.save();
         }
 

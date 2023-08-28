@@ -7,7 +7,7 @@ export class AstronautasController {
         
     @Post()
         async create(@Body() createAstronauta: any){
-            return this.astronautaService.create(createAstronauta)
+            return this.astronautaService.create(createAstronauta);
         }
     }
 

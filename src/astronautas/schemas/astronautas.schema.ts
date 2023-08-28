@@ -1,4 +1,5 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
+
 export enum AstronautaTipo {
     Comandante = 'Comandante',
     Tripulante = 'Tripulante',
@@ -10,7 +11,7 @@ export class Astronauta {
     nombre: string;
     @Prop({required: true})
     mision: string;
-    @Prop({default:AstronautaTipo})
+    @Prop({default:AstronautaTipo.Tripulante})
     tipo: AstronautaTipo;
 
 }
